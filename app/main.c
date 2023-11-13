@@ -18,7 +18,7 @@ int main() {
         }
     }
 
-    printf("Fibonacci of %f is %d\n", n, fibonachi((int)n));
+    printf("Fibonachi %d\n", fibonachi(n));
  
     double *roots;
 
