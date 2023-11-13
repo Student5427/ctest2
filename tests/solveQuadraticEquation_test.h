@@ -12,7 +12,9 @@ extern "C" {
 }
 
 TEST(mysolveQuadraticEquationTest, TwoRealRoots) {
-    double a = 1.0, b = -3.0, c = 2.0;
+    double a = 1.0;
+    double b = -3.0;
+    double c = 2.0;
     double *roots = solveQuadraticEquation(a, b, c);
     ASSERT_TRUE(roots != NULL);
     ASSERT_DOUBLE_EQ(roots[0], 2.0);
