@@ -39,7 +39,8 @@ double* solveQuadraticEquation(double a, double b, double c) {
             roots[0] = (-b + sqrt(discriminant)) / (2 * a);
             roots[1] = (-b - sqrt(discriminant)) / (2 * a);
         }
-
+	
+	free(roots);
         return roots;
     }
 }
