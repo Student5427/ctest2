@@ -39,6 +39,6 @@ int main() {
         printf("ROOT2 %f\n", roots[1]);
         free(roots);
     }
-    
+    free(roots);
     return 0;
 }
