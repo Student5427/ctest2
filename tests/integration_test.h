@@ -21,8 +21,6 @@ TEST(integrationTest, sqrtFibonachi) {
 
     ASSERT_EQ(roots[0], expectedRoot1);
     ASSERT_EQ(roots[1], expectedRoot2);
-
-    free(roots);
 }
 
 
