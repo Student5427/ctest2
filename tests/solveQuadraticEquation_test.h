@@ -17,7 +17,6 @@ TEST(mysolveQuadraticEquationTest, TwoRealRoots) {
     ASSERT_TRUE(roots != NULL);
     ASSERT_DOUBLE_EQ(roots[0], 2.0);
     ASSERT_DOUBLE_EQ(roots[1], 1.0);
-    free(roots);
 }
 
 TEST(mysolveQuadraticEquationTest, OneRealRoot) {
@@ -26,7 +25,6 @@ TEST(mysolveQuadraticEquationTest, OneRealRoot) {
     ASSERT_TRUE(roots != NULL);
     ASSERT_DOUBLE_EQ(roots[0], 2.0);
     ASSERT_DOUBLE_EQ(roots[1], 2.0);
-    free(roots);
 }
 
 TEST(mysolveQuadraticEquationTest, ComplexRoots) {
@@ -35,7 +33,6 @@ TEST(mysolveQuadraticEquationTest, ComplexRoots) {
     ASSERT_TRUE(roots != NULL);
     ASSERT_DOUBLE_EQ(roots[0], 0.0);
     ASSERT_DOUBLE_EQ(roots[1], 0.0);
-    free(roots);
 }
 
 TEST(mysolveQuadraticEquationTest, NoRealRoots) {
@@ -44,7 +41,6 @@ TEST(mysolveQuadraticEquationTest, NoRealRoots) {
     ASSERT_TRUE(roots != NULL);
     ASSERT_DOUBLE_EQ(roots[0], 0.0);
     ASSERT_DOUBLE_EQ(roots[1], 0.0);
-    free(roots);
 }
 
 #endif 
