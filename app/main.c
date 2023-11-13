@@ -4,7 +4,7 @@
 
 int main() {
     printf("Enter a non-negative number: ");
-    double n;
+    double n = 0;
     if (scanf("%lf", &n) != 1 || n < 0) {
         printf("Invalid input. Please enter a non-negative number.\n");
         return 0;      }        
@@ -18,7 +18,7 @@ int main() {
         }
     }
 
-    printf("Fibonachi %d\n", fibonachi(n));
+    printf("Fibonachi %d\n", fibonachi((int)n));
  
     double *roots;
 
