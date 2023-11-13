@@ -23,7 +23,11 @@ int main() {
     double *roots;
 
     printf("Enter a, b, c\n");
-    double a, b, c;
+
+    double a;
+    double b;
+    double c; 
+
     scanf("%lf %lf %lf", &a, &b, &c);
 
     roots = solveQuadraticEquation(a, b, c);
