@@ -37,7 +37,6 @@ int main() {
     } else {
         printf("ROOT1 %f\n", roots[0]);
         printf("ROOT2 %f\n", roots[1]);
-        free(roots);
     }
     free(roots);
     return 0;
