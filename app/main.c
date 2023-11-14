@@ -27,9 +27,12 @@ int main() {
     double a;
     double b;
     double c; 
-
-    scanf("%lf %lf %lf", &a, &b, &c);
-
+	
+    if (scanf("%lf %lf %lf", &a, &b, &c) != 3) {
+        printf("Invalid input. Please enter three valid numbers for coefficients a, b, and c.\n");
+        return 0;
+    }
+ 
     roots = solveQuadraticEquation(a, b, c);
 	
     if (roots == NULL) {
