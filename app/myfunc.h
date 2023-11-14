@@ -2,6 +2,6 @@
 #define MYFUNC_H
 
 int fibonachi(int num);
-double* solveQuadraticEquation(double a, double b, double c);
+int solveQuadraticEquation(double a, double b, double c, double* roots);
 
 #endif // MYFUNC_H
