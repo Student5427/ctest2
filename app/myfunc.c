@@ -29,6 +29,7 @@ int solveQuadraticEquation(double a, double b, double c, double* roots) {
 
     if (discriminant < 0) {
 	roots[0] = roots[1] = 0.0;
+	return 0;
     } else {
         if (discriminant == 0) {
             roots[0] = -b / (2 * a);
