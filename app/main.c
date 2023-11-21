@@ -20,7 +20,7 @@ int main() {
 
     printf("Fibonachi %d\n", fibonachi((int)n));
  
-    double *roots;
+    double roots[2];
 
     printf("Enter a, b, c\n");
 
@@ -33,14 +33,13 @@ int main() {
         return 0;
     }
  
-    roots = solveQuadraticEquation(a, b, c);
+    int res = solveQuadraticEquation(a, b, c, roots);
 	
-    if (roots == NULL) {
+    if (res == NULL) {
         printf("No real roots\n");
     } else {
         printf("ROOT1 %f\n", roots[0]);
         printf("ROOT2 %f\n", roots[1]);
     }
-    free(roots);
     return 0;
 }
