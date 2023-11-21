@@ -14,8 +14,7 @@ extern "C" {
 
 TEST(integrationTest, sqrtFibonachi) {
 
-    double roots[2];
-    solveQuadraticEquation(fibonachi(6), -22, 14, roots);
+    double* roots = solveQuadraticEquation(fibonachi(6), -22, 14);
 
     double expectedRoot1 = 1.75;
     double expectedRoot2 = 1.00; 

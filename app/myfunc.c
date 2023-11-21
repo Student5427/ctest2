@@ -24,8 +24,9 @@ int fibonachi(int num) {
     return next;
 }
 
-int solveQuadraticEquation(double a, double b, double c, double* roots) {
+double* solveQuadraticEquation(double a, double b, double c) {
     double discriminant = b * b - 4 * a * c;
+    double* roots = (double*)malloc(2 * sizeof(double));
 
     if (discriminant < 0) {
 	roots[0] = roots[1] = 0.0;
@@ -38,6 +39,6 @@ int solveQuadraticEquation(double a, double b, double c, double* roots) {
             roots[1] = (-b - sqrt(discriminant)) / (2 * a);
         }
 
-        return 1;
+        return roots;
     }
 }
