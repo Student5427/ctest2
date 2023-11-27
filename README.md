@@ -53,7 +53,7 @@
      <h4> Тест А4 (негативный) </h4>
      <ul>
        <li> Начальное состояние: Открытый терминал </li>
-       <li> Действие: Пользователь запускает программу с 2 аргументами </li>
+       <li> Действие: Пользователь запускает программу с 2 аргументами: 1 2 </li>
        <li> Ожидаемый результат: Invalid input. Please enter only one positive integer. </li>
       </ul>
    </li> 
@@ -88,7 +88,7 @@
     </ol>
   </li>
     <li>
-      <h2>Метод double* solveQuadraticEquation(double a, double b, double c)</h2>
+      <h2>Метод int solveQuadraticEquation(double a, double b, double c, double* roots)</h2>
     <ol>
     	<li>
     	  <h4>Тест Б2.1 (положительный)</h4>
@@ -129,7 +129,7 @@
   <li>
     <h3>Тест И1</h3>
     <ul>
-      <li>Методы: int fibonachi(int num), double* solveQuadraticEquation(double a, double b, double c)</li>
+      <li>Методы: int fibonachi(int num), int solveQuadraticEquation(double a, double b, double c, double* roots)</li>
       <li>Описание: Проверяем, можно ли использовать результат работы функции fibonachi в функции solveQuadraticEquationt</li>
       <li>Входные данные: (fibonachi(6), -22, 14)</li>
       <li>Ожидаемый результат: ROOT1=1.75 ROOT2=1.00</li>
