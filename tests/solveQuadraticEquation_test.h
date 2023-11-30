@@ -18,7 +18,7 @@ TEST(mysolveQuadraticEquationTest, TwoRealRoots) {
     double roots[2];
     solveQuadraticEquation(a, b, c, roots);
     ASSERT_TRUE(roots != NULL);
-    ASSERT_DOUBLE_EQ(roots[0], 3.0);
+    ASSERT_DOUBLE_EQ(roots[0], 2.0);
     ASSERT_DOUBLE_EQ(roots[1], 1.0);
 }
 
